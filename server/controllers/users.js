@@ -1,5 +1,6 @@
 import User from "../models/User";
 
+
 // READ
 export const getUser = async(req, res) => {
     try {
@@ -32,6 +33,7 @@ export const getUserFriends = async (req, res) => {
         res.status(404).json({ message: err.message });
     }
 };
+
 
 // UPDATE
 export const addRemoveFriend = async(req, res) => {
