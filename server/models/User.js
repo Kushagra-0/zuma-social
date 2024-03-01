@@ -20,20 +20,19 @@ const UserSchema = new mongoose.Schema(
             type: String,
             required: true,
             max: 50,
-            unique: true
+            unique: true,
         },
 
         password: {
             type: String,
-            require: true,
-            min: 5
+            required: true,
+            min: 5,
         },
 
         picturePath: {
             type: String,
             default: "",
         },
-
         friends: {
             type: Array,
             default: [],
